@@ -1,0 +1,11 @@
+const ENVIRONMENTS = {
+  DEVELOPEMENT: "development",
+  PRODUCTION: "production",
+};
+
+export default ENVIRONMENTS;
+
+export const CURRENT_ENVIRONMENT =
+  process.env.NODE_ENV === ENVIRONMENTS.DEVELOPEMENT
+    ? ENVIRONMENTS.DEVELOPEMENT
+    : ENVIRONMENTS.PRODUCTION;
